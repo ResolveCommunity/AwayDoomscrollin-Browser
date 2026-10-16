@@ -1,0 +1,601 @@
+#away-doomscrollin-intervention,
+#away-doomscrollin-intervention * {
+  box-sizing: border-box !important;
+}
+
+#away-doomscrollin-intervention {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 2147483647 !important;
+  display: grid !important;
+  place-items: center !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  margin: 0 !important;
+  padding: 24px !important;
+  overflow: auto !important;
+  color-scheme: dark !important;
+  color: #f7fbff !important;
+  background:
+    radial-gradient(circle at 50% 10%, rgba(12, 214, 225, 0.16), transparent 36%),
+    rgba(3, 8, 17, 0.985) !important;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  line-height: 1.5 !important;
+  isolation: isolate !important;
+}
+
+#away-doomscrollin-intervention .away-doomscrollin-card {
+  width: min(100%, 540px) !important;
+  margin: auto !important;
+  padding: clamp(26px, 6vw, 46px) !important;
+  border: 1px solid rgba(60, 223, 233, 0.35) !important;
+  border-radius: 26px !important;
+  background: linear-gradient(160deg, rgba(14, 25, 43, 0.98), rgba(5, 10, 19, 0.98)) !important;
+  box-shadow: 0 28px 90px rgba(0, 0, 0, 0.56), 0 0 44px rgba(18, 211, 223, 0.08) !important;
+  text-align: center !important;
+}
+
+#away-doomscrollin-intervention .away-doomscrollin-brand {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 13px !important;
+  margin: 0 auto 30px !important;
+  text-align: left !important;
+}
+
+#away-doomscrollin-intervention .away-doomscrollin-logo {
+  display: block !important;
+  width: 42px !important;
+  height: 42px !important;
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 12px !important;
+  object-fit: contain !important;
+}
+
+#away-doomscrollin-intervention .away-doomscrollin-brand-divider {
+  display: block !important;
+  align-self: stretch !important;
+  width: 1px !important;
+  min-height: 42px !important;
+  background: rgba(80, 230, 239, 0.34) !important;
+}
+
+#away-doomscrollin-intervention .away-doomscrollin-brand-copy {
+  display: grid !important;
+  gap: 2px !important;
+}
+
+#away-doomscrollin-intervention .away-doomscrollin-brand-name,
+#away-doomscrollin-intervention .away-doomscrollin-brand-byline {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.2 !important;
+}
+
+#away-doomscrollin-intervention .away-doomscrollin-brand-name {
+  color: #ffffff !important;
+  font-size: 17px !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em !important;
+}
+
+#away-doomscrollin-intervention .away-doomscrollin-brand-byline {
+  color: #8297ad !important;
+  font-size: 11px !important;
+  font-weight: 650 !important;
+}
+
+#away-doomscrollin-intervention .away-doomscrollin-eyebrow {
+  margin: 0 0 12px !important;
+  color: #50e6ef !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+}
+
+#away-doomscrollin-intervention .away-doomscrollin-title {
+  margin: 0 !important;
+  color: #ffffff !important;
+  font-size: clamp(30px, 8vw, 50px) !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.035em !important;
+  line-height: 1.04 !important;
+}
+
+#away-doomscrollin-intervention .away-doomscrollin-description {
+  max-width: 440px !important;
+  margin: 20px auto 0 !important;
+  color: #b9c7d8 !important;
+  font-size: 16px !important;
+  line-height: 1.65 !important;
+}
+
+#away-doomscrollin-intervention .away-doomscrollin-actions {
+  display: grid !important;
+  gap: 10px !important;
+  margin-top: 30px !important;
+}
+
+#away-doomscrollin-intervention .away-doomscrollin-button {
+  min-height: 48px !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 12px 18px !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  border-radius: 14px !important;
+  color: #f6fbff !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  box-shadow: none !important;
+  font: inherit !important;
+  font-size: 15px !important;
+  font-weight: 750 !important;
+  text-align: center !important;
+  cursor: pointer !important;
+  transition: border-color 150ms ease, background-color 150ms ease, transform 150ms ease !important;
+}
+
+#away-doomscrollin-intervention .away-doomscrollin-button:hover,
+#away-doomscrollin-intervention .away-doomscrollin-button:focus-visible {
+  border-color: rgba(80, 230, 239, 0.76) !important;
+  background: rgba(80, 230, 239, 0.12) !important;
+  outline: 3px solid rgba(80, 230, 239, 0.24) !important;
+  outline-offset: 2px !important;
+}
+
+#away-doomscrollin-intervention .away-doomscrollin-button:hover {
+  transform: translateY(-1px) !important;
+}
+
+#away-doomscrollin-intervention .away-doomscrollin-button-primary {
+  border-color: #1edce6 !important;
+  color: #001014 !important;
+  background: #1edce6 !important;
+}
+
+#away-doomscrollin-intervention .away-doomscrollin-button-primary:hover,
+#away-doomscrollin-intervention .away-doomscrollin-button-primary:focus-visible {
+  color: #001014 !important;
+  background: #6bf5fb !important;
+}
+
+#away-doomscrollin-intervention .away-doomscrollin-button-quiet {
+  border-color: transparent !important;
+  color: #8fa0b5 !important;
+  background: transparent !important;
+  font-size: 13px !important;
+}
+
+#away-doomscrollin-intervention .away-doomscrollin-website {
+  display: inline-block !important;
+  margin: 22px auto 0 !important;
+  padding: 4px !important;
+  color: #6cecf3 !important;
+  background: transparent !important;
+  font-size: 12px !important;
+  font-weight: 750 !important;
+  letter-spacing: 0.025em !important;
+  text-decoration: none !important;
+}
+
+#away-doomscrollin-intervention .away-doomscrollin-website:hover {
+  text-decoration: underline !important;
+  text-underline-offset: 3px !important;
+}
+
+#away-doomscrollin-intervention .away-doomscrollin-website:focus-visible {
+  border-radius: 6px !important;
+  outline: 3px solid rgba(80, 230, 239, 0.28) !important;
+  outline-offset: 2px !important;
+}
+
+/* Keep newly mounted feed articles covered before the mutation repair runs.
+   Protection stays armed on DM routes so SPA navigation cannot flash the feed. */
+html[data-away-instagram-media-protection] :is(main, [role="main"]) article:not([aria-roledescription="message"]) {
+  position: relative !important;
+  isolation: isolate !important;
+}
+
+html[data-away-instagram-media-protection] :is(main, [role="main"]) article:not([aria-roledescription="message"])::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: #000 !important;
+  z-index: 9 !important;
+  pointer-events: auto !important;
+}
+
+html[data-away-instagram-media-protection] :is(main, [role="main"]) article:not([aria-roledescription="message"]) :is(img, video, canvas) {
+  visibility: hidden !important;
+}
+
+/* Balanced mode briefly holds an individual /p/ page closed while Instagram's
+   canonical metadata confirms whether it is a normal post or a Reel alias. */
+html[data-away-instagram-post-classifying] :is(main, [role="main"]) article:not([aria-roledescription="message"]) {
+  position: relative !important;
+  isolation: isolate !important;
+}
+
+html[data-away-instagram-post-classifying] :is(main, [role="main"]) article:not([aria-roledescription="message"])::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: #000 !important;
+  z-index: 11 !important;
+  pointer-events: auto !important;
+}
+
+html[data-away-instagram-post-classifying] :is(main, [role="main"]) article:not([aria-roledescription="message"]) :is(img, video, canvas) {
+  visibility: hidden !important;
+}
+
+html[data-away-tiktok-redirecting] body {
+  visibility: hidden !important;
+}
+
+html[data-away-tiktok-covered] :is([data-e2e="recommend-list"], [data-e2e="browse-video"]) {
+  overflow: hidden !important;
+  overscroll-behavior: none !important;
+}
+
+/* TikTok's media-card layout uses an absolutely positioned overlay rather
+   than main/recommend-list. Preserve that positioning to cover the video. */
+html[data-away-tiktok-covered] [data-key-interaction="video_card"] {
+  position: absolute !important;
+  inset: 0 !important;
+  background: #000 !important;
+  z-index: 2 !important;
+  overflow: hidden !important;
+  pointer-events: auto !important;
+  touch-action: none !important;
+}
+
+html[data-away-tiktok-covered] [data-key-interaction="video_card"] > :not(.away-doomscrollin-shroud) {
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+html[data-away-tiktok-covered] video {
+  visibility: hidden !important;
+}
+
+/* Balanced mode keeps intentional search/profile/message surfaces usable,
+   but TikTok's hover and first-card previews must never autoplay there. */
+html[data-away-tiktok-intentional-grid] video {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Focused viewing exposes only the explicitly selected video. Preloaded next
+   clips, recommendation links, and swipe controls stay unavailable. */
+html[data-away-tiktok-focused-video] video:not([data-away-tiktok-focused-media]) {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+html[data-away-tiktok-focused-video] video[data-away-tiktok-focused-media] {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+html[data-away-tiktok-focused-video] [data-away-tiktok-related-media],
+html[data-away-tiktok-focused-video] [data-e2e="recommend-list"],
+html[data-away-tiktok-focused-video] :is(
+  [data-e2e="arrow-left"],
+  [data-e2e="arrow-right"],
+  [data-e2e="arrow-up"],
+  [data-e2e="arrow-down"],
+  [data-e2e="feed-navigation-prev"],
+  [data-e2e="feed-navigation-next"],
+  [data-e2e="video-switch-prev"],
+  [data-e2e="video-switch-next"],
+  [data-e2e="cinema-playback-control-autoscroll"],
+  button[aria-label="Next video" i],
+  button[aria-label="Previous video" i],
+  button[aria-label="Sonraki video" i],
+  button[aria-label="Önceki video" i],
+  [class*="ButtonSwitchVideo"]
+) {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+/* YouTube watch aliases are classified from canonical metadata before media is
+   revealed. This closes /shorts/ID -> /watch?v=ID without duration guessing. */
+html[data-away-youtube-watch-classifying] :is(#movie_player, #player) video {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+/* Hide Home recommendations during the brief interval before YouTube's SPA
+   surface is large enough for the in-place curtain to attach. */
+html[data-away-youtube-home-covered] ytd-browse[page-subtype="home"] :is(
+  ytd-rich-grid-renderer,
+  #contents
+) > :not(.away-doomscrollin-shroud) {
+  visibility: hidden !important;
+}
+
+html[data-away-youtube-home-covered] ytd-browse[page-subtype="home"] .away-doomscrollin-shroud {
+  visibility: visible !important;
+}
+
+/* Balanced mode keeps intentional Shorts results visible as static choices;
+   hover previews cannot silently start a new viewing loop. */
+html[data-away-youtube-intentional-grid] [data-away-youtube-static-short] video {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Strict long-form viewing removes algorithmic continuation surfaces while
+   preserving the selected video, its channel information, and comments. */
+html[data-away-youtube-strict-watch] :is(
+  #secondary,
+  ytd-watch-next-secondary-results-renderer,
+  .ytp-next-button,
+  .ytp-prev-button,
+  .ytp-autonav-toggle-button,
+  .ytp-endscreen-content,
+  .ytp-ce-element,
+  ytd-merch-shelf-renderer
+) {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+/* Focused Viewing exposes exactly the chosen Short inside the regular watch
+   page. Comments and channel information remain available, but no next clip,
+   related shelf, end card, or background player can take over. */
+html[data-away-youtube-focused-short] video:not([data-away-youtube-focused-media]) {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+html[data-away-youtube-focused-short] video[data-away-youtube-focused-media] {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+html[data-away-youtube-focused-short] :is(
+  #secondary,
+  ytd-watch-next-secondary-results-renderer,
+  ytd-playlist-panel-renderer,
+  [data-away-youtube-related-media],
+  .ytp-next-button,
+  .ytp-prev-button,
+  .ytp-autonav-toggle-button,
+  .ytp-endscreen-content,
+  .ytp-ce-element,
+  ytd-merch-shelf-renderer
+) {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+[data-away-doomscrollin-shrouded] {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+[data-away-doomscrollin-shrouded] video {
+  display: none !important;
+}
+
+[data-away-doomscrollin-shrouded] img,
+[data-away-doomscrollin-shrouded] canvas {
+  visibility: hidden !important;
+}
+
+
+/* Composer reply thumbnails are images, not shared-card buttons. Keep their
+   geometry while blacking out cached post/reel covers, including new replies. */
+html[data-away-instagram-media-protection][data-away-instagram-direct] img[aria-hidden="true"][width="100%"][height="100%"][src*="ig_cache_key="],
+[data-away-messages="true"] img[aria-hidden="true"][width="100%"][height="100%"][src*="ig_cache_key="] {
+  filter: brightness(0) !important;
+  opacity: 1 !important;
+}
+
+/* Ensure Instagram navigation, search/notification flyouts, dialogs, and messages stay above explore covers */
+html[data-away-instagram-media-protection] :is(div:has(> nav), div:has(> aside), nav, aside, [role="navigation"], [role="dialog"], [role="search"], [aria-modal="true"], [data-away-flyout="true"], [data-away-messages="true"]) {
+  z-index: 1000 !important;
+}
+
+/* Profile-grid shrouds live in isolated stacking contexts. Elevate Instagram's
+   active drawer above those contexts without changing the drawer's own layout. */
+html[data-away-instagram-strict] [data-away-flyout-elevated="true"] {
+  z-index: 2147483000 !important;
+  isolation: isolate !important;
+}
+
+html[data-away-instagram-strict] [data-away-flyout-positioned="true"] {
+  position: relative !important;
+}
+
+/* When a profile grid sits beneath the notifications drawer, keep the media
+   hidden even where its high-z-index shroud is clipped out of the drawer area. */
+html[data-away-instagram-flyout-open] :is(main, [role="main"]) [data-away-doomscrollin-shrouded] {
+  background: #000000 !important;
+}
+
+[data-away-messages="true"],
+[data-away-messages="true"] * {
+  pointer-events: auto !important;
+}
+
+.away-doomscrollin-shroud,
+.away-doomscrollin-shroud * {
+  box-sizing: border-box !important;
+}
+
+.away-doomscrollin-shroud {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  z-index: 10 !important;
+  display: grid !important;
+  place-items: center !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: inherit !important;
+  background: #000000 !important;
+  color-scheme: dark !important;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  cursor: not-allowed !important;
+  pointer-events: auto !important;
+  isolation: isolate !important;
+}
+
+/* Instagram's notification drawer lives in a fixed z-index: 10 portal. Keep
+   media-grid covers below that portal, while notification thumbnails (outside
+   main) retain the normal z-index: 10 cover. The media beneath stays hidden by
+   [data-away-doomscrollin-shrouded], so lowering this layer cannot reveal it. */
+html[data-away-instagram-strict] :is(main, [role="main"]) a[data-away-doomscrollin-shrouded] > .away-doomscrollin-shroud,
+html[data-away-instagram-balanced-profile] :is(main, [role="main"]) a[data-away-doomscrollin-shrouded] > .away-doomscrollin-shroud {
+  z-index: 2 !important;
+}
+
+.away-doomscrollin-shroud .away-doomscrollin-grid-shield-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 0 !important;
+  opacity: 0.55 !important;
+  transition: opacity 150ms ease !important;
+  pointer-events: none !important;
+}
+
+.away-doomscrollin-shroud:hover .away-doomscrollin-grid-shield-icon {
+  opacity: 0.9 !important;
+}
+
+.away-doomscrollin-shroud .away-doomscrollin-grid-shield-icon svg {
+  width: clamp(26px, 3.5vw, 40px) !important;
+  height: clamp(26px, 3.5vw, 40px) !important;
+}
+
+.away-doomscrollin-shroud .away-doomscrollin-shroud-content {
+  display: grid !important;
+  justify-items: center !important;
+  gap: 10px !important;
+  max-width: 86% !important;
+  margin: 0 !important;
+  padding: 12px !important;
+  text-align: center !important;
+}
+
+.away-doomscrollin-shroud .away-doomscrollin-shroud-icon,
+.away-doomscrollin-surface-banner .away-doomscrollin-shroud-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 0 !important;
+}
+
+.away-doomscrollin-shroud .away-doomscrollin-shroud-title,
+.away-doomscrollin-surface-banner .away-doomscrollin-shroud-title {
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #ffffff !important;
+  font-size: clamp(17px, 2.4vw, 24px) !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.01em !important;
+  line-height: 1.25 !important;
+}
+
+.away-doomscrollin-shroud .away-doomscrollin-shroud-description,
+.away-doomscrollin-surface-banner .away-doomscrollin-shroud-description {
+  max-width: 420px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #9aa7b8 !important;
+  font-size: clamp(12px, 1.5vw, 15px) !important;
+  font-weight: 500 !important;
+  line-height: 1.55 !important;
+}
+
+.away-doomscrollin-explore-curtain {
+  position: fixed !important;
+  z-index: 1 !important;
+  display: grid !important;
+  place-items: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  color-scheme: dark !important;
+  pointer-events: none !important;
+  isolation: isolate !important;
+}
+
+.away-doomscrollin-surface-banner {
+  display: grid !important;
+  place-content: center !important;
+  justify-items: center !important;
+  gap: 12px !important;
+  max-width: 520px !important;
+  margin: 0 !important;
+  padding: 24px 32px !important;
+  background: rgba(8, 14, 24, 0.94) !important;
+  border: 1px solid rgba(60, 223, 233, 0.35) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.7), 0 0 24px rgba(18, 211, 223, 0.1) !important;
+  backdrop-filter: blur(12px) !important;
+  color-scheme: dark !important;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  line-height: 1.5 !important;
+  text-align: center !important;
+  pointer-events: none !important;
+}
+
+.away-doomscrollin-surface-banner .away-doomscrollin-banner-action {
+  min-height: 44px !important;
+  margin-top: 10px !important;
+  padding: 10px 22px !important;
+  border: 1px solid #1edce6 !important;
+  border-radius: 14px !important;
+  color: #001014 !important;
+  background: #1edce6 !important;
+  box-shadow: none !important;
+  font: inherit !important;
+  font-size: 14px !important;
+  font-weight: 750 !important;
+  text-align: center !important;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  transition: background-color 150ms ease !important;
+}
+
+.away-doomscrollin-surface-banner .away-doomscrollin-banner-action:hover,
+.away-doomscrollin-surface-banner .away-doomscrollin-banner-action:focus-visible {
+  background: #6bf5fb !important;
+  outline: 3px solid rgba(80, 230, 239, 0.28) !important;
+  outline-offset: 2px !important;
+}
+
+@media (max-width: 480px) {
+  #away-doomscrollin-intervention {
+    padding: 14px !important;
+  }
+
+  #away-doomscrollin-intervention .away-doomscrollin-card {
+    padding: 28px 20px !important;
+    border-radius: 20px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #away-doomscrollin-intervention .away-doomscrollin-button {
+    transition: none !important;
+  }
+}

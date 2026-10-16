@@ -1,0 +1,17 @@
+{
+  "name": "awaydoomscrollin-browser",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Cross-browser short-form feed interruption for Instagram, TikTok, and YouTube.",
+  "license": "GPL-3.0-only",
+  "scripts": {
+    "test": "node --test",
+    "build": "node scripts/build.mjs && node scripts/package-zip.mjs",
+    "package": "node scripts/package-zip.mjs",
+    "verify:build": "node scripts/verify-build.mjs",
+    "verify": "node --test && node scripts/build.mjs && node scripts/verify-build.mjs && node scripts/package-zip.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,497 @@
+{
+  "extensionName": {
+    "message": "AwayDoomscrollin' — Kısa Akış Durdurucu"
+  },
+  "extensionDescription": {
+    "message": "Amaçlı alanları engellemeden Instagram, TikTok ve YouTube'daki dikkat dağıtan akışları durdurun."
+  },
+  "actionTitle": {
+    "message": "AwayDoomscrollin' koruma ayarları"
+  },
+  "onboardingDocumentTitle": {
+    "message": "AwayDoomscrollin' kurulumunu tamamla"
+  },
+  "onboardingEyebrow": {
+    "message": "Tarayıcı koruması"
+  },
+  "onboardingStepLabel": {
+    "message": "Bir dakikalık kurulum"
+  },
+  "onboardingTitle": {
+    "message": "Korumanız hazır"
+  },
+  "onboardingSummary": {
+    "message": "Desteklenen sitelere bir kez izin verin; AwayDoomscrollin' dikkat dağıtan kısa içerik akışlarını otomatik olarak durdurabilsin."
+  },
+  "onboardingAccessTitle": {
+    "message": "Desteklenen sitelere izin verin"
+  },
+  "onboardingAccessDescription": {
+    "message": "Erişim yalnızca Instagram, TikTok ve YouTube ile sınırlıdır. Böylece eklenti korunan adresleri tanıyabilir ve yerel müdahale ekranını gösterebilir."
+  },
+  "onboardingAccessLimit": {
+    "message": "Başka sitelere erişim istenmez."
+  },
+  "onboardingStatisticsTitle": {
+    "message": "Etki istatistikleriniz yerel kalır"
+  },
+  "onboardingStatisticsDescription": {
+    "message": "Eklenti Instagram, TikTok ve YouTube müdahalelerini ayrı ayrı sayar. Bu sürüm sayaçları yalnızca bu tarayıcıda saklar ve telemetri göndermez."
+  },
+  "readPrivacyDisclosure": {
+    "message": "Gizlilik açıklamasının tamamını oku"
+  },
+  "onboardingPlatformsTitle": {
+    "message": "Korunacak platformları seçin"
+  },
+  "onboardingPlatformsDescription": {
+    "message": "Koruma hedefe yöneliktir: yalnızca aşağıda belirtilen dikkat dağıtıcı alanlar durdurulur; amaçlı kullanım alanları açık kalır."
+  },
+  "onboardingInstagramTitle": {
+    "message": "Instagram Reels ve Akış"
+  },
+  "onboardingInstagramDescription": {
+    "message": "Sert Modda Hikâyeler, Reels, tekil gönderiler ve ana akış kaydırması durdurulur. DM'ler, profiller, yorumlar ve ayarlar açık kalır."
+  },
+  "onboardingTikTokTitle": {
+    "message": "TikTok Akışı"
+  },
+  "onboardingTikTokDescription": {
+    "message": "Sizin İçin, Takip, Keşfet, CANLI ve yeni TikTok akışları durdurulur. Sert Mod videoları kapatır; Dengeli Mod amaçlı tek videoyu Odaklı İzleme ile açar."
+  },
+  "onboardingYouTubeTitle": {
+    "message": "YouTube Shorts"
+  },
+  "onboardingYouTubeDescription": {
+    "message": "Sert Mod ana sayfa önerilerini ve tüm Shorts yüzeylerini kapatır. Dengeli Modda amaçlı seçilen tek Short Odaklı İzleme ile açılır."
+  },
+  "onboardingSettingsNote": {
+    "message": "Her platformun ayarını daha sonra eklenti menüsünden değiştirebilirsiniz."
+  },
+  "onboardingPlatformSaved": {
+    "message": "Platform tercihleri kaydedildi"
+  },
+  "onboardingSelectionCount": {
+    "message": "Etkin"
+  },
+  "onboardingFinishNote": {
+    "message": "Platform seçimleriniz anında kaydedilir."
+  },
+  "onboardingMobileEyebrow": {
+    "message": "Android'de de kullanılabilir"
+  },
+  "onboardingMobileTitle": {
+    "message": "Molayı tarayıcının dışına taşıyın"
+  },
+  "onboardingMobileDescription": {
+    "message": "Instagram Reels, TikTok ve YouTube Shorts için ayrı bir AwayDoomscrollin' Android uygulaması da vardır. Uygulamanın kurulumu, izinleri, ayarları ve gizlilik açıklaması eklentiden ayrıdır."
+  },
+  "onboardingMobileCta": {
+    "message": "Android uygulamasını incele"
+  },
+  "onboardingCommunityEyebrow": {
+    "message": "Bir Resolve Community projesi"
+  },
+  "onboardingCommunityCta": {
+    "message": "Resolve Community'yi ziyaret et"
+  },
+  "finishSetup": {
+    "message": "Kurulumu tamamla"
+  },
+  "popupEyebrow": {
+    "message": "Kısa akış koruması"
+  },
+  "popupSummary": {
+    "message": "Instagram, TikTok ve YouTube'daki dikkat dağıtan akışları durdurun."
+  },
+  "summaryPageEyebrow": {
+    "message": "Genel bakış"
+  },
+  "summaryPageTitle": {
+    "message": "Koruma durumunuz"
+  },
+  "protectionStatusLabel": {
+    "message": "Koruma durumu"
+  },
+  "protectionChecking": {
+    "message": "Koruma kontrol ediliyor…"
+  },
+  "protectionActiveTitle": {
+    "message": "Koruma etkin"
+  },
+  "protectionActiveDescription": {
+    "message": "Instagram, TikTok ve YouTube koruması devrede."
+  },
+  "protectionActiveAll": {
+    "message": "Tüm platformlarda koruma devrede."
+  },
+  "protectionActiveSelected": {
+    "message": "{platforms} koruması devrede."
+  },
+  "protectionOffTitle": {
+    "message": "Koruma kapalı"
+  },
+  "protectionOffDescription": {
+    "message": "Uygulamalar bölümünden korumaları açabilirsiniz."
+  },
+  "protectionNeedsAccessTitle": {
+    "message": "Site erişim izni gerekiyor"
+  },
+  "protectionNeedsAccessDescription": {
+    "message": "Uygulamalar bölümünden desteklenen sitelere izin verin."
+  },
+  "activePlatformCount": {
+    "message": "$COUNT$/3 Aktif",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "manageApplications": {
+    "message": "Korunan platformları yönet"
+  },
+  "applicationsPageEyebrow": {
+    "message": "Uygulamalar"
+  },
+  "applicationsPageTitle": {
+    "message": "Korunacak platformları seçin"
+  },
+  "applicationsPageDescription": {
+    "message": "Her platform için korumayı kolayca açıp kapatabilirsiniz. Değişiklikler anında kaydedilir."
+  },
+  "aboutPageEyebrow": {
+    "message": "Hakkında"
+  },
+  "aboutPageTitle": {
+    "message": "Gizliliğe önem veren koruma"
+  },
+  "aboutPageDescription": {
+    "message": "AwayDoomscrollin' Browser, Resolve Community'nin ücretsiz ve açık kaynaklı bir projesidir."
+  },
+  "versionLabel": {
+    "message": "Sürüm"
+  },
+  "productWebsiteDescription": {
+    "message": "Proje sitesi ve Android uygulaması"
+  },
+  "communityWebsiteDescription": {
+    "message": "Projeyi geliştiren bağımsız girişimi tanıyın"
+  },
+  "privacyLinkDescription": {
+    "message": "Eklentinin yerel veri açıklamasının tamamını okuyun"
+  },
+  "mainNavigationLabel": {
+    "message": "Eklenti bölümleri"
+  },
+  "summaryNavigationLabel": {
+    "message": "Özet"
+  },
+  "applicationsNavigationLabel": {
+    "message": "Uygulamalar"
+  },
+  "aboutNavigationLabel": {
+    "message": "Hakkında"
+  },
+  "badgeProtectionActive": {
+    "message": "AwayDoomscrollin': 3 platformdan $COUNT$ tanesi korunuyor",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeProtectionOff": {
+    "message": "AwayDoomscrollin': koruma kapalı"
+  },
+  "badgePermissionRequired": {
+    "message": "AwayDoomscrollin': desteklenen sitelere erişim izni gerekiyor"
+  },
+  "settingsHeading": {
+    "message": "Koruma"
+  },
+  "platformsLabel": {
+    "message": "Koruma platformları"
+  },
+  "instagramSettingsHeading": {
+    "message": "Instagram koruması"
+  },
+  "tiktokSettingsHeading": {
+    "message": "TikTok koruması"
+  },
+  "youtubeSettingsHeading": {
+    "message": "YouTube koruması"
+  },
+  "siteAccessRequired": {
+    "message": "Site erişim izni gerekiyor"
+  },
+  "siteAccessDescription": {
+    "message": "Eklentiye tıklamadan korumanın otomatik çalışabilmesi için desteklenen sitelere erişim izni verin."
+  },
+  "grantSiteAccess": {
+    "message": "Desteklenen sitelere izin ver"
+  },
+  "siteAccessGranted": {
+    "message": "Site erişimine izin verildi. Açık siteyi yenileyin."
+  },
+  "siteAccessAlreadyGranted": {
+    "message": "Site erişimine zaten izin verilmiş"
+  },
+  "siteAccessReady": {
+    "message": "Koruma, desteklenen sitelerde otomatik çalışabilir."
+  },
+  "siteAccessStillRequired": {
+    "message": "Site erişimine izin verilmedi"
+  },
+  "instagramSetting": {
+    "message": "Instagram Reels ve Akış"
+  },
+  "instagramSettingDescription": {
+    "message": "Instagram Reels, gönderi ve ana akış durdurulmasını yönetir."
+  },
+  "instagramModeHeading": {
+    "message": "Koruma modu"
+  },
+  "instagramStrictMode": {
+    "message": "Sert Mod"
+  },
+  "instagramStrictModeDescription": {
+    "message": "Hikâyeler ve profil gönderileri; Ana Sayfa, Keşfet ve Reels ile birlikte perdelenir."
+  },
+  "instagramBalancedMode": {
+    "message": "Dengeli Mod"
+  },
+  "instagramBalancedModeDescription": {
+    "message": "Hikâyeler ve profil gönderileri açık kalır; Ana Sayfa, Keşfet ve Reels korunmaya devam eder."
+  },
+  "tiktokSetting": {
+    "message": "TikTok Akışı"
+  },
+  "tiktokSettingDescription": {
+    "message": "TikTok akışlarını ve videolarını yönetir."
+  },
+  "tiktokModeHeading": {
+    "message": "Koruma modu"
+  },
+  "tiktokStrictMode": {
+    "message": "Sert Mod"
+  },
+  "tiktokStrictModeDescription": {
+    "message": "Akışlar, profil videoları ve tekil videolar perdelenir; mesajlaşma açık kalır."
+  },
+  "tiktokBalancedMode": {
+    "message": "Dengeli Mod"
+  },
+  "tiktokBalancedModeDescription": {
+    "message": "Akışlar kapalı kalır; arama veya profilden seçilen tek video Odaklı İzleme ile açılır."
+  },
+  "youtubeSetting": {
+    "message": "YouTube Shorts"
+  },
+  "youtubeSettingDescription": {
+    "message": "Videoları süresine göre yargılamadan öneri döngülerini ve Shorts'u yönetir."
+  },
+  "youtubeModeHeading": {
+    "message": "Koruma modu"
+  },
+  "youtubeStrictMode": {
+    "message": "Sert Mod"
+  },
+  "youtubeStrictModeDescription": {
+    "message": "Ana sayfa önerileri ve tüm Shorts yüzeyleri korunur; arama, abonelikler, kanallar ve uzun videolar açık kalır."
+  },
+  "youtubeBalancedMode": {
+    "message": "Dengeli Mod"
+  },
+  "youtubeBalancedModeDescription": {
+    "message": "Shorts rafları gizli kalır; arama, kanal, abonelikler veya kitaplıktan amaçlı seçilen tek Short Odaklı İzleme ile açılır."
+  },
+  "protectedAreasLabel": {
+    "message": "Durdurulur"
+  },
+  "availableAreasLabel": {
+    "message": "Açık kalır"
+  },
+  "instagramProtectedAreas": {
+    "message": "Reels, Ana Sayfa ve Keşfet akışları"
+  },
+  "instagramAvailableAreas": {
+    "message": "DM'ler, profiller, yorumlar ve ayarlar"
+  },
+  "tiktokProtectedAreas": {
+    "message": "Sizin İçin, Takip, Keşfet, CANLI ve zincirleme video geçişleri"
+  },
+  "tiktokAvailableAreas": {
+    "message": "Mesajlar; Dengeli Modda arama, profiller ve Odaklı İzleme"
+  },
+  "youtubeProtectedAreas": {
+    "message": "Shorts akışları, zincirleme geçiş, otomatik oynatma ve öneri döngüleri"
+  },
+  "youtubeAvailableAreas": {
+    "message": "Arama, abonelikler, kanallar, kitaplık, uzun videolar ve Dengeli Odaklı İzleme"
+  },
+  "betaLabel": {
+    "message": "Beta"
+  },
+  "interventionCountLabel": {
+    "message": "Yerel müdahale analizi"
+  },
+  "interventionAnalysisDescription": {
+    "message": "Bu tarayıcıda tutulan müdahalelerin dağılımıdır; ekran süresi değildir."
+  },
+  "totalLabel": {
+    "message": "Toplam"
+  },
+  "resetCount": {
+    "message": "Sıfırla"
+  },
+  "savedStatus": {
+    "message": "Kaydedildi"
+  },
+  "localOnlyNotice": {
+    "message": "Telemetri yoktur. Ayarlar ve veriler bu tarayıcıda kalır."
+  },
+  "languageSettingLabel": {
+    "message": "Dil"
+  },
+  "privacyLink": {
+    "message": "Gizlilik"
+  },
+  "byResolveCommunity": {
+    "message": "Resolve Community tarafından"
+  },
+  "websiteLinkLabel": {
+    "message": "awaydoomscrollin.com sitesini aç"
+  },
+  "communityWebsiteLinkLabel": {
+    "message": "resolvecommunity.com sitesini aç"
+  },
+  "interventionEyebrow": {
+    "message": "Bilinçli bir ara"
+  },
+  "homeShroudTitle": {
+    "message": "Akış Korunuyor"
+  },
+  "homeShroudDescription": {
+    "message": "Ana akış kapalı. Hikâyeler ve Direkt Mesajlar kullanılabilir."
+  },
+  "homeStrictShroudDescription": {
+    "message": "Ana akış ve Hikâyeler kapalı. Direkt Mesajlar kullanılabilir."
+  },
+  "exploreShroudTitle": {
+    "message": "Keşfet Korunuyor"
+  },
+  "exploreShroudDescription": {
+    "message": "Keşfet kapalı. Arama kullanılabilir."
+  },
+  "postShroudTitle": {
+    "message": "Gönderi Korunuyor"
+  },
+  "postShroudDescription": {
+    "message": "Bu gönderi kapalı. Mesajlar ve profiller kullanılabilir."
+  },
+  "reelsShroudTitle": {
+    "message": "Reels Korunuyor"
+  },
+  "reelsShroudDescription": {
+    "message": "Reels'e girildiğinde çıkılır. Mesajlar ve profiller kullanılabilir."
+  },
+  "feedInterventionTitle": {
+    "message": "Ana akış burada durdu."
+  },
+  "feedInterventionDescription": {
+    "message": "Instagram ana akışında dikey kaydırma algılandı. AwayDoomscrollin', sonsuz akış devam etmeden önce kaydırmayı durdurdu."
+  },
+  "reelsInterventionTitle": {
+    "message": "Reels burada durdu."
+  },
+  "reelsInterventionDescription": {
+    "message": "AwayDoomscrollin' bu Reels adresini durdurdu. Instagram'dan ayrılabilir veya amaçlı bir alana geçebilirsiniz."
+  },
+  "postInterventionTitle": {
+    "message": "Bu Instagram gönderisi burada durdu."
+  },
+  "postInterventionDescription": {
+    "message": "AwayDoomscrollin', Keşfet bölümünün yeni bir sonsuz izleme döngüsüne dönüşmemesi için bu gönderiyi durdurdu."
+  },
+  "exploreInterventionTitle": {
+    "message": "Keşfet burada durdu."
+  },
+  "exploreInterventionDescription": {
+    "message": "AwayDoomscrollin', Keşfet ızgarasını yerinde kararttı ve sonsuz kaydırmasını durdurdu. Arama, mesajlar ve profiller açık kalır."
+  },
+  "tiktokInterventionTitle": {
+    "message": "TikTok burada durdu."
+  },
+  "tiktokInterventionDescription": {
+    "message": "AwayDoomscrollin', sonraki otomatik kaydırmadan önce bu TikTok akışını veya videosunu durdurdu."
+  },
+  "tiktokShroudTitle": {
+    "message": "TikTok akışı korunuyor"
+  },
+  "tiktokShroudDescription": {
+    "message": "Sonsuz akış kapalı. Mesajlar kullanılabilir; Dengeli Modda amaçlı tek video izlenebilir."
+  },
+  "youtubeHomeShroudTitle": {
+    "message": "YouTube Ana Sayfa korunuyor"
+  },
+  "youtubeHomeShroudDescription": {
+    "message": "Öneri döngüleri kapalı. Arama, abonelikler, kanallar ve kitaplık kullanılabilir."
+  },
+  "youtubeShortShroudTitle": {
+    "message": "Shorts korunuyor"
+  },
+  "youtubeShortShroudDescription": {
+    "message": "Otomatik izleme döngüsünü önlemek için bu kısa içerik yüzeyi perdelenmiştir."
+  },
+  "youtubeInterventionTitle": {
+    "message": "YouTube Shorts burada durdu."
+  },
+  "youtubeInterventionDescription": {
+    "message": "AwayDoomscrollin' bu Shorts adresini durdurdu. Normal YouTube videoları kullanılabilir durumda kalır."
+  },
+  "leaveInstagram": {
+    "message": "Instagram'dan ayrıl"
+  },
+  "leaveTikTok": {
+    "message": "TikTok'tan ayrıl"
+  },
+  "leaveYouTube": {
+    "message": "YouTube'dan ayrıl"
+  },
+  "goToMessages": {
+    "message": "Mesajlara git"
+  },
+  "goToTikTokHome": {
+    "message": "TikTok ana sayfasına git"
+  },
+  "goToYouTubeHome": {
+    "message": "Normal YouTube'a git"
+  },
+  "disableProtection": {
+    "message": "Bu korumayı kapat"
+  },
+  "donateLink": {
+    "message": "Bağış Yap & Destek Ol"
+  },
+  "donateLinkDescription": {
+    "message": "Polar ile açık kaynak geliştirmeye destek olun"
+  },
+  "donateLinkLabel": {
+    "message": "Polar üzerinden projeyi destekle"
+  },
+  "confirmDisableTitle": {
+    "message": "Korumayı kapatmak istiyor musunuz?"
+  },
+  "confirmDisableDescription": {
+    "message": "Bu platform için kısa akış engeli kapatılacak. Dilediğiniz zaman eklenti simgesine tıklayarak tekrar açabilirsiniz."
+  },
+  "keepProtection": {
+    "message": "Korumaya Devam Et"
+  },
+  "confirmDisableButton": {
+    "message": "Evet, Korumayı Kapat"
+  }
+}

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title data-i18n="onboardingDocumentTitle">Set up AwayDoomscrollin'</title>
+    <link rel="stylesheet" href="onboarding.css">
+  </head>
+  <body>
+    <div class="ambient-glow ambient-glow-one" aria-hidden="true"></div>
+    <div class="ambient-glow ambient-glow-two" aria-hidden="true"></div>
+
+    <main class="onboarding-shell">
+      <header class="brand">
+        <span class="brand-icon">
+          <img src="../icons/icon-96.png" alt="" width="56" height="56">
+        </span>
+        <span class="brand-divider" aria-hidden="true"></span>
+        <div>
+          <p class="eyebrow" data-i18n="onboardingEyebrow">Browser protection</p>
+          <p class="brand-name">AwayDoomscrollin'</p>
+          <a class="byline" href="https://resolvecommunity.com/en/" target="_blank" rel="noreferrer" data-community-link data-i18n="byResolveCommunity">by Resolve Community</a>
+        </div>
+      </header>
+
+      <section class="intro" aria-labelledby="onboarding-title">
+        <div class="intro-kicker">
+          <p class="step-label" data-i18n="onboardingStepLabel">One-minute setup</p>
+          <div class="step-track" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+        <h1 id="onboarding-title" data-i18n="onboardingTitle">Your protection is ready</h1>
+        <p data-i18n="onboardingSummary">Allow the supported sites once, then AwayDoomscrollin' can interrupt distracting short-form feeds automatically.</p>
+      </section>
+
+      <div class="setup-grid">
+        <section id="access-card" class="setup-card" aria-labelledby="access-title">
+          <div class="card-topline">
+            <div class="section-number" aria-hidden="true">01</div>
+            <span class="card-state" aria-hidden="true"></span>
+          </div>
+          <div class="section-content">
+            <h2 id="access-title" data-i18n="onboardingAccessTitle">Allow supported sites</h2>
+            <p data-i18n="onboardingAccessDescription">Access is limited to Instagram, TikTok, and YouTube so the extension can recognize protected routes and display its local intervention.</p>
+            <button id="grant-site-access" class="primary-button" type="button" data-i18n="grantSiteAccess">
+              Allow supported sites
+            </button>
+            <p id="access-status" class="status" aria-live="polite"></p>
+            <p class="fine-print" data-i18n="onboardingAccessLimit">No access to other websites is requested.</p>
+          </div>
+        </section>
+
+        <section class="setup-card privacy-card" aria-labelledby="statistics-title">
+          <div class="card-topline">
+            <div class="section-number" aria-hidden="true">02</div>
+            <span class="privacy-pulse" aria-hidden="true"></span>
+          </div>
+          <div class="section-content">
+            <h2 id="statistics-title" data-i18n="onboardingStatisticsTitle">Your impact statistics stay local</h2>
+            <p data-i18n="onboardingStatisticsDescription">The extension counts interventions separately for Instagram, TikTok, and YouTube. This version stores those counters only in this browser and sends no telemetry.</p>
+            <a class="text-link" href="https://awaydoomscrollin.com/en/privacy/" target="_blank" rel="noreferrer" data-privacy-link>
+              <span data-i18n="readPrivacyDisclosure">Read the complete privacy disclosure</span>
+              <span class="link-arrow" aria-hidden="true">&#8599;</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="setup-card platforms-card" aria-labelledby="platforms-title">
+          <div class="card-topline">
+            <div class="section-number" aria-hidden="true">03</div>
+          </div>
+          <div class="section-content">
+            <h2 id="platforms-title" data-i18n="onboardingPlatformsTitle">Choose the platforms to protect</h2>
+            <p class="platforms-intro" data-i18n="onboardingPlatformsDescription">Protection is targeted: only the distracting routes described below are interrupted, while intentional areas remain available.</p>
+            <div class="platform-list">
+              <label class="platform-item">
+                <span class="platform-icon"><img src="../icons/platform-instagram.svg" alt=""></span>
+                <span class="platform-copy">
+                  <span class="platform-heading"><strong data-i18n="onboardingInstagramTitle">Instagram Reels &amp; Feed</strong><em data-i18n="betaLabel">Beta</em></span>
+                  <small data-i18n="onboardingInstagramDescription">Stories, Reels, individual posts, and home-feed scrolling are interrupted in Strict Mode. DMs, profiles, comments, and settings remain available.</small>
+                </span>
+                <input class="visually-hidden" type="checkbox" data-setting="protectInstagram" checked>
+                <span class="toggle-track" aria-hidden="true"><span></span></span>
+              </label>
+              <label class="platform-item">
+                <span class="platform-icon"><img src="../icons/platform-tiktok.svg" alt=""></span>
+                <span class="platform-copy">
+                  <span class="platform-heading"><strong data-i18n="onboardingTikTokTitle">TikTok Feed</strong><em data-i18n="betaLabel">Beta</em></span>
+                    <small data-i18n="onboardingTikTokDescription">For You, Following, Explore, LIVE, and new TikTok feeds are interrupted. Strict Mode closes videos; Balanced Mode opens one intentional video in Focused Viewing.</small>
+                </span>
+                <input class="visually-hidden" type="checkbox" data-setting="protectTikTok" checked>
+                <span class="toggle-track" aria-hidden="true"><span></span></span>
+              </label>
+              <label class="platform-item">
+                <span class="platform-icon"><img src="../icons/platform-youtube.svg" alt=""></span>
+                <span class="platform-copy">
+                  <span class="platform-heading"><strong data-i18n="onboardingYouTubeTitle">YouTube Shorts</strong><em data-i18n="betaLabel">Beta</em></span>
+                  <small data-i18n="onboardingYouTubeDescription">Strict Mode closes Home recommendations and every Shorts surface. Balanced Mode allows one intentionally selected Short in Focused Viewing.</small>
+                </span>
+                <input class="visually-hidden" type="checkbox" data-setting="protectYoutubeShorts" checked>
+                <span class="toggle-track" aria-hidden="true"><span></span></span>
+              </label>
+            </div>
+            <p class="fine-print" data-i18n="onboardingSettingsNote">You can change each platform setting later from the extension menu.</p>
+            <p id="platform-status" class="status" aria-live="polite"></p>
+          </div>
+        </section>
+      </div>
+
+      <section class="ecosystem-card" aria-labelledby="mobile-app-title">
+        <div class="phone-preview" aria-hidden="true">
+          <span class="phone-speaker"></span>
+          <span class="phone-screen">
+            <img src="../icons/icon-96.png" alt="">
+            <span class="phone-line phone-line-long"></span>
+            <span class="phone-line"></span>
+            <span class="phone-button"></span>
+          </span>
+        </div>
+        <div class="ecosystem-copy">
+          <p class="ecosystem-eyebrow" data-i18n="onboardingMobileEyebrow">Also available on Android</p>
+          <h2 id="mobile-app-title" data-i18n="onboardingMobileTitle">Take the pause beyond your browser</h2>
+          <p data-i18n="onboardingMobileDescription">AwayDoomscrollin' also has a separate Android app for Instagram Reels, TikTok, and YouTube Shorts. It has its own installation, permissions, settings, and privacy disclosure.</p>
+          <div class="ecosystem-actions">
+            <a class="secondary-button" href="https://awaydoomscrollin.com/en/" target="_blank" rel="noreferrer" data-mobile-app-link>
+              <span data-i18n="onboardingMobileCta">Explore the Android app</span>
+              <span aria-hidden="true">&#8599;</span>
+            </a>
+            <a class="community-button" href="https://resolvecommunity.com/en/" target="_blank" rel="noreferrer" data-community-link>
+              <span class="community-mark" aria-hidden="true">R</span>
+              <span>
+                <small data-i18n="onboardingCommunityEyebrow">A Resolve Community project</small>
+                <strong data-i18n="onboardingCommunityCta">Visit Resolve Community</strong>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="finish-row">
+        <div>
+          <span class="finish-check" aria-hidden="true">&#10003;</span>
+          <p data-i18n="onboardingFinishNote">Your platform selections are saved immediately.</p>
+        </div>
+        <button id="finish-setup" class="primary-button finish-button" type="button">
+          <span data-i18n="finishSetup">Finish setup</span>
+          <span aria-hidden="true">&#8594;</span>
+        </button>
+      </div>
+    </main>
+    <script src="onboarding.js"></script>
+  </body>
+</html>

@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AwayDoomscrollin'</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="popup-shell">
+      <header class="brand">
+        <img src="../icons/icon-48.png" alt="" width="42" height="42">
+        <span class="brand-divider" aria-hidden="true"></span>
+        <div>
+          <p class="eyebrow" data-i18n="popupEyebrow">Short-feed protection</p>
+          <h1>AwayDoomscrollin'</h1>
+          <p class="byline" data-i18n="byResolveCommunity">by Resolve Community</p>
+        </div>
+      </header>
+
+      <section class="app-page" id="summary-page" data-page="summary">
+        <div class="page-heading">
+          <p class="page-kicker" data-i18n="summaryPageEyebrow">Overview</p>
+          <h2 data-i18n="summaryPageTitle">Your protection at a glance</h2>
+        </div>
+
+        <section id="protection-status-card" class="protection-status-card is-checking" aria-labelledby="protection-status-title">
+          <div class="status-orb" aria-hidden="true"><span></span></div>
+          <div class="protection-status-copy">
+            <span class="status-label" data-i18n="protectionStatusLabel">Protection status</span>
+            <strong id="protection-status-title" data-i18n="protectionChecking">Checking protection…</strong>
+            <p id="protection-status-description"></p>
+          </div>
+        </section>
+
+        <button id="open-apps-button" class="manage-apps-button" type="button">
+          <span data-i18n="manageApplications">Manage protected platforms</span>
+          <span aria-hidden="true">&#8594;</span>
+        </button>
+
+        <section class="statistics" aria-labelledby="statistics-heading">
+          <div class="statistics-header">
+            <div>
+              <span id="statistics-heading" data-i18n="interventionCountLabel">Local intervention analysis</span>
+              <small data-i18n="interventionAnalysisDescription">Distribution of interventions saved in this browser — not screen time.</small>
+            </div>
+            <div class="statistics-total">
+              <span data-i18n="totalLabel">Total</span>
+              <strong id="intervention-count" aria-live="polite">0</strong>
+            </div>
+          </div>
+          <div class="stacked-analysis">
+            <div class="stacked-chart" aria-hidden="true">
+              <div class="stacked-track">
+                <span class="stack-segment stack-instagram" data-stat-bar="instagram"></span>
+                <span class="stack-segment stack-tiktok" data-stat-bar="tiktok"></span>
+                <span class="stack-segment stack-youtube" data-stat-bar="youtube"></span>
+              </div>
+            </div>
+            <div class="chart-legend">
+              <div class="legend-item legend-instagram">
+                <span class="legend-dot"></span>
+                <img src="../icons/platform-instagram.svg" alt="">
+                <span>Instagram</span>
+                <strong data-stat-value="instagram">0</strong>
+                <em data-stat-percent="instagram">0%</em>
+              </div>
+              <div class="legend-item legend-tiktok">
+                <span class="legend-dot"></span>
+                <img src="../icons/platform-tiktok.svg" alt="">
+                <span>TikTok</span>
+                <strong data-stat-value="tiktok">0</strong>
+                <em data-stat-percent="tiktok">0%</em>
+              </div>
+              <div class="legend-item legend-youtube">
+                <span class="legend-dot"></span>
+                <img src="../icons/platform-youtube.svg" alt="">
+                <span>YouTube</span>
+                <strong data-stat-value="youtube">0</strong>
+                <em data-stat-percent="youtube">0%</em>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="app-page" id="applications-page" data-page="applications" hidden>
+        <div class="page-heading">
+          <div class="page-kicker-row">
+            <p class="page-kicker" data-i18n="applicationsPageEyebrow">Applications</p>
+            <em class="beta-badge" data-i18n="betaLabel">Beta</em>
+          </div>
+          <h2 data-i18n="applicationsPageTitle">Choose what AwayDoomscrollin' protects</h2>
+          <p data-i18n="applicationsPageDescription">Control protection for each platform. Changes are saved immediately.</p>
+        </div>
+
+        <section id="site-access-warning" class="site-access-warning" hidden>
+          <strong data-i18n="siteAccessRequired">Site access is required</strong>
+          <p data-i18n="siteAccessDescription">Allow access to the supported sites so protection can run automatically, without clicking the extension first.</p>
+          <button id="grant-site-access" type="button" data-i18n="grantSiteAccess">Allow supported sites</button>
+        </section>
+
+        <div class="platform-tabs" role="tablist" aria-label="Platforms" data-i18n-aria-label="platformsLabel">
+          <button class="platform-tab" id="instagram-tab" type="button" role="tab" aria-selected="true" aria-controls="instagram-panel" data-platform="instagram">
+            <img src="../icons/platform-instagram.svg" alt="">
+            <span>Instagram</span>
+          </button>
+          <button class="platform-tab" id="tiktok-tab" type="button" role="tab" aria-selected="false" aria-controls="tiktok-panel" data-platform="tiktok" tabindex="-1">
+            <img src="../icons/platform-tiktok.svg" alt="">
+            <span>TikTok</span>
+          </button>
+          <button class="platform-tab" id="youtube-tab" type="button" role="tab" aria-selected="false" aria-controls="youtube-panel" data-platform="youtube" tabindex="-1">
+            <img src="../icons/platform-youtube.svg" alt="">
+            <span>YouTube</span>
+          </button>
+        </div>
+
+        <section class="settings platform-panel" id="instagram-panel" role="tabpanel" aria-labelledby="instagram-tab">
+          <h2 data-i18n="instagramSettingsHeading">Instagram protection</h2>
+          <label class="setting-row">
+            <span>
+              <strong data-i18n="instagramSetting">Instagram Reels &amp; Feed</strong>
+              <small data-i18n="instagramSettingDescription">One switch controls Instagram's distracting feed areas.</small>
+            </span>
+            <input type="checkbox" data-setting="protectInstagram">
+          </label>
+          <fieldset class="mode-selector" data-instagram-mode-selector>
+            <legend data-i18n="instagramModeHeading">Protection mode</legend>
+            <div class="mode-options">
+              <label class="mode-option">
+                <input type="radio" name="instagram-protection-mode" value="strict" data-instagram-mode>
+                <span data-i18n="instagramStrictMode">Strict Mode</span>
+              </label>
+              <label class="mode-option">
+                <input type="radio" name="instagram-protection-mode" value="balanced" data-instagram-mode>
+                <span data-i18n="instagramBalancedMode">Balanced Mode</span>
+              </label>
+            </div>
+            <p id="instagram-mode-description" class="mode-description" aria-live="polite">Stories and profile posts are covered along with Home, Explore, and Reels.</p>
+          </fieldset>
+          <div class="scope-details">
+            <p><span class="scope-icon scope-icon-protected" aria-hidden="true">&times;</span><span class="visually-hidden" data-i18n="protectedAreasLabel">Interrupted</span><span data-i18n="instagramProtectedAreas">Reels, Home, and Explore feeds</span></p>
+            <p><span class="scope-icon scope-icon-available" aria-hidden="true">&#10003;</span><span class="visually-hidden" data-i18n="availableAreasLabel">Available</span><span data-i18n="instagramAvailableAreas">DMs, profiles, comments, and settings</span></p>
+          </div>
+        </section>
+
+        <section class="settings platform-panel" id="tiktok-panel" role="tabpanel" aria-labelledby="tiktok-tab" hidden>
+          <h2 data-i18n="tiktokSettingsHeading">TikTok protection</h2>
+          <label class="setting-row">
+            <span>
+              <strong data-i18n="tiktokSetting">TikTok Feed</strong>
+              <small data-i18n="tiktokSettingDescription">One switch controls supported TikTok feeds and videos.</small>
+            </span>
+            <input type="checkbox" data-setting="protectTikTok">
+          </label>
+          <fieldset class="mode-selector" data-tiktok-mode-selector>
+            <legend data-i18n="tiktokModeHeading">Protection mode</legend>
+            <div class="mode-options">
+              <label class="mode-option">
+                <input type="radio" name="tiktok-protection-mode" value="strict" data-tiktok-mode>
+                <span data-i18n="tiktokStrictMode">Strict Mode</span>
+              </label>
+              <label class="mode-option">
+                <input type="radio" name="tiktok-protection-mode" value="balanced" data-tiktok-mode>
+                <span data-i18n="tiktokBalancedMode">Balanced Mode</span>
+              </label>
+            </div>
+            <p id="tiktok-mode-description" class="mode-description" aria-live="polite">Feeds and every video surface are covered; messaging remains available.</p>
+          </fieldset>
+          <div class="scope-details">
+            <p><span class="scope-icon scope-icon-protected" aria-hidden="true">&times;</span><span class="visually-hidden" data-i18n="protectedAreasLabel">Interrupted</span><span data-i18n="tiktokProtectedAreas">For You, Following, Explore, LIVE, and chained video navigation</span></p>
+            <p><span class="scope-icon scope-icon-available" aria-hidden="true">&#10003;</span><span class="visually-hidden" data-i18n="availableAreasLabel">Available</span><span data-i18n="tiktokAvailableAreas">Messages; search, profiles, and Focused Viewing in Balanced Mode</span></p>
+          </div>
+        </section>
+
+        <section class="settings platform-panel" id="youtube-panel" role="tabpanel" aria-labelledby="youtube-tab" hidden>
+          <h2 data-i18n="youtubeSettingsHeading">YouTube protection</h2>
+          <label class="setting-row">
+            <span>
+              <strong data-i18n="youtubeSetting">YouTube Shorts</strong>
+              <small data-i18n="youtubeSettingDescription">Controls recommendation loops and Shorts without judging videos by duration.</small>
+            </span>
+            <input type="checkbox" data-setting="protectYoutubeShorts">
+          </label>
+          <fieldset class="mode-selector" data-youtube-mode-selector>
+            <legend data-i18n="youtubeModeHeading">Protection mode</legend>
+            <div class="mode-options">
+              <label class="mode-option">
+                <input type="radio" name="youtube-protection-mode" value="strict" data-youtube-mode>
+                <span data-i18n="youtubeStrictMode">Strict Mode</span>
+              </label>
+              <label class="mode-option">
+                <input type="radio" name="youtube-protection-mode" value="balanced" data-youtube-mode>
+                <span data-i18n="youtubeBalancedMode">Balanced Mode</span>
+              </label>
+            </div>
+            <p id="youtube-mode-description" class="mode-description" aria-live="polite">Home recommendations and every Shorts surface are protected; intentional YouTube tools remain available.</p>
+          </fieldset>
+          <div class="scope-details">
+            <p><span class="scope-icon scope-icon-protected" aria-hidden="true">&times;</span><span class="visually-hidden" data-i18n="protectedAreasLabel">Interrupted</span><span data-i18n="youtubeProtectedAreas">Shorts feeds, chained navigation, autoplay, and recommendation loops</span></p>
+            <p><span class="scope-icon scope-icon-available" aria-hidden="true">&#10003;</span><span class="visually-hidden" data-i18n="availableAreasLabel">Available</span><span data-i18n="youtubeAvailableAreas">Search, subscriptions, channels, library, long videos, and Balanced Focused Viewing</span></p>
+          </div>
+        </section>
+
+        <p id="save-status" class="save-status" aria-live="polite"></p>
+      </section>
+
+      <section class="app-page" id="about-page" data-page="about" hidden>
+        <div class="page-heading">
+          <p class="page-kicker" data-i18n="aboutPageEyebrow">About</p>
+          <h2 data-i18n="aboutPageTitle">Privacy-conscious protection</h2>
+          <p data-i18n="aboutPageDescription">AwayDoomscrollin' Browser is a free and open-source Resolve Community project.</p>
+        </div>
+
+        <section class="about-card">
+          <div class="about-product">
+            <img src="../icons/icon-48.png" alt="">
+            <div>
+              <strong>AwayDoomscrollin' Browser</strong>
+              <span><span data-i18n="versionLabel">Version</span> <span data-version>0.3.0</span></span>
+            </div>
+          </div>
+          <div class="language-setting">
+            <span data-i18n="languageSettingLabel">Language</span>
+            <div class="language-options" role="group" aria-label="Language" data-i18n-aria-label="languageSettingLabel">
+              <button type="button" data-popup-language="tr" aria-pressed="false">Türkçe</button>
+              <button type="button" data-popup-language="en" aria-pressed="false">English</button>
+            </div>
+          </div>
+          <p data-i18n="localOnlyNotice">No telemetry. Settings and data stay in this browser.</p>
+        </section>
+
+        <nav class="about-links" aria-label="Links">
+          <a href="https://buy.polar.sh/polar_cl_RclX9afTZaH2T0Qed3x1jZuKg2lLwwkf9t8LB2foPA8" target="_blank" rel="noreferrer" class="about-link-featured" data-donate-link>
+            <span class="about-link-icon about-link-icon-polar" aria-hidden="true">💖</span>
+            <span><strong data-i18n="donateLink">Donate &amp; Support</strong><small data-i18n="donateLinkDescription">Support the open-source development on Polar</small></span>
+            <span aria-hidden="true">&#8599;</span>
+          </a>
+          <a href="https://awaydoomscrollin.com/en/" target="_blank" rel="noreferrer" data-website-link>
+            <span class="about-link-icon" aria-hidden="true">A</span>
+            <span><strong>awaydoomscrollin.com</strong><small data-i18n="productWebsiteDescription">Product website and Android app</small></span>
+            <span aria-hidden="true">&#8599;</span>
+          </a>
+          <a href="https://resolvecommunity.com/en/" target="_blank" rel="noreferrer" data-community-link>
+            <span class="about-link-icon" aria-hidden="true">R</span>
+            <span><strong>Resolve Community</strong><small data-i18n="communityWebsiteDescription">Meet the independent initiative behind the project</small></span>
+            <span aria-hidden="true">&#8599;</span>
+          </a>
+          <a href="https://awaydoomscrollin.com/en/privacy" target="_blank" rel="noreferrer" data-privacy-link>
+            <span class="about-link-icon" aria-hidden="true">🛡️</span>
+            <span><strong data-i18n="privacyLink">Privacy</strong><small data-i18n="privacyLinkDescription">Read the extension's complete privacy disclosure</small></span>
+            <span aria-hidden="true">&#8599;</span>
+          </a>
+        </nav>
+      </section>
+
+      <nav class="main-navigation" aria-label="Extension sections" data-i18n-aria-label="mainNavigationLabel">
+        <button class="main-navigation-item is-active" type="button" data-page-target="summary" aria-controls="summary-page" aria-current="page">
+          <span class="main-navigation-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3.5 11.2 12 4l8.5 7.2"></path><path d="M5.8 10v9.5h12.4V10"></path><path d="M9.5 19.5v-5.8h5v5.8"></path></svg>
+          </span>
+          <span data-i18n="summaryNavigationLabel">Summary</span>
+        </button>
+        <button class="main-navigation-item" type="button" data-page-target="applications" aria-controls="applications-page">
+          <span class="main-navigation-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1.5"></rect><rect x="14" y="4" width="6" height="6" rx="1.5"></rect><rect x="4" y="14" width="6" height="6" rx="1.5"></rect><rect x="14" y="14" width="6" height="6" rx="1.5"></rect></svg>
+          </span>
+          <span data-i18n="applicationsNavigationLabel">Applications</span>
+        </button>
+        <button class="main-navigation-item" type="button" data-page-target="about" aria-controls="about-page">
+          <span class="main-navigation-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 10.7v5.2"></path><path d="M12 7.6h.01"></path></svg>
+          </span>
+          <span data-i18n="aboutNavigationLabel">About</span>
+        </button>
+      </nav>
+    </main>
+    <script src="popup-messages.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

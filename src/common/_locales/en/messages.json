@@ -1,0 +1,497 @@
+{
+  "extensionName": {
+    "message": "AwayDoomscrollin' — Short-Feed Interrupter"
+  },
+  "extensionDescription": {
+    "message": "Interrupt distracting feeds on Instagram, TikTok, and YouTube without blocking intentional areas."
+  },
+  "actionTitle": {
+    "message": "AwayDoomscrollin' protection settings"
+  },
+  "onboardingDocumentTitle": {
+    "message": "Set up AwayDoomscrollin'"
+  },
+  "onboardingEyebrow": {
+    "message": "Browser protection"
+  },
+  "onboardingStepLabel": {
+    "message": "One-minute setup"
+  },
+  "onboardingTitle": {
+    "message": "Your protection is ready"
+  },
+  "onboardingSummary": {
+    "message": "Allow the supported sites once, then AwayDoomscrollin' can interrupt distracting short-form feeds automatically."
+  },
+  "onboardingAccessTitle": {
+    "message": "Allow supported sites"
+  },
+  "onboardingAccessDescription": {
+    "message": "Access is limited to Instagram, TikTok, and YouTube so the extension can recognize protected routes and display its local intervention."
+  },
+  "onboardingAccessLimit": {
+    "message": "No access to other websites is requested."
+  },
+  "onboardingStatisticsTitle": {
+    "message": "Your impact statistics stay local"
+  },
+  "onboardingStatisticsDescription": {
+    "message": "The extension counts interventions separately for Instagram, TikTok, and YouTube. This version stores those counters only in this browser and sends no telemetry."
+  },
+  "readPrivacyDisclosure": {
+    "message": "Read the complete privacy disclosure"
+  },
+  "onboardingPlatformsTitle": {
+    "message": "Choose the platforms to protect"
+  },
+  "onboardingPlatformsDescription": {
+    "message": "Protection is targeted: only the distracting routes described below are interrupted, while intentional areas remain available."
+  },
+  "onboardingInstagramTitle": {
+    "message": "Instagram Reels & Feed"
+  },
+  "onboardingInstagramDescription": {
+    "message": "Stories, Reels, individual posts, and home-feed scrolling are interrupted in Strict Mode. DMs, profiles, comments, and settings remain available."
+  },
+  "onboardingTikTokTitle": {
+    "message": "TikTok Feed"
+  },
+  "onboardingTikTokDescription": {
+    "message": "For You, Following, Explore, LIVE, and new TikTok feeds are interrupted. Strict Mode closes videos; Balanced Mode opens one intentional video in Focused Viewing."
+  },
+  "onboardingYouTubeTitle": {
+    "message": "YouTube Shorts"
+  },
+  "onboardingYouTubeDescription": {
+    "message": "Strict Mode closes Home recommendations and every Shorts surface. Balanced Mode allows one intentionally selected Short in Focused Viewing."
+  },
+  "onboardingSettingsNote": {
+    "message": "You can change each platform setting later from the extension menu."
+  },
+  "onboardingPlatformSaved": {
+    "message": "Platform preferences saved"
+  },
+  "onboardingSelectionCount": {
+    "message": "Active"
+  },
+  "onboardingFinishNote": {
+    "message": "Your platform selections are saved immediately."
+  },
+  "onboardingMobileEyebrow": {
+    "message": "Also available on Android"
+  },
+  "onboardingMobileTitle": {
+    "message": "Take the pause beyond your browser"
+  },
+  "onboardingMobileDescription": {
+    "message": "AwayDoomscrollin' also has a separate Android app for Instagram Reels, TikTok, and YouTube Shorts. It has its own installation, permissions, settings, and privacy disclosure."
+  },
+  "onboardingMobileCta": {
+    "message": "Explore the Android app"
+  },
+  "onboardingCommunityEyebrow": {
+    "message": "A Resolve Community project"
+  },
+  "onboardingCommunityCta": {
+    "message": "Visit Resolve Community"
+  },
+  "finishSetup": {
+    "message": "Finish setup"
+  },
+  "popupEyebrow": {
+    "message": "Short-feed protection"
+  },
+  "popupSummary": {
+    "message": "Interrupt distracting feeds on Instagram, TikTok, and YouTube."
+  },
+  "summaryPageEyebrow": {
+    "message": "Overview"
+  },
+  "summaryPageTitle": {
+    "message": "Your protection at a glance"
+  },
+  "protectionStatusLabel": {
+    "message": "Protection status"
+  },
+  "protectionChecking": {
+    "message": "Checking protection…"
+  },
+  "protectionActiveTitle": {
+    "message": "Protection is active"
+  },
+  "protectionActiveDescription": {
+    "message": "Short-feed protection is active."
+  },
+  "protectionActiveAll": {
+    "message": "Protection is active across all platforms."
+  },
+  "protectionActiveSelected": {
+    "message": "{platforms} protection is active."
+  },
+  "protectionOffTitle": {
+    "message": "Protection is off"
+  },
+  "protectionOffDescription": {
+    "message": "Turn on platform protections from Applications."
+  },
+  "protectionNeedsAccessTitle": {
+    "message": "Site access is needed"
+  },
+  "protectionNeedsAccessDescription": {
+    "message": "Choose Applications and allow the supported sites."
+  },
+  "activePlatformCount": {
+    "message": "$COUNT$/3 Active",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "manageApplications": {
+    "message": "Manage protected platforms"
+  },
+  "applicationsPageEyebrow": {
+    "message": "Applications"
+  },
+  "applicationsPageTitle": {
+    "message": "Choose what AwayDoomscrollin' protects"
+  },
+  "applicationsPageDescription": {
+    "message": "Control protection for each platform. Changes are saved immediately."
+  },
+  "aboutPageEyebrow": {
+    "message": "About"
+  },
+  "aboutPageTitle": {
+    "message": "Privacy-conscious protection"
+  },
+  "aboutPageDescription": {
+    "message": "AwayDoomscrollin' Browser is a free and open-source Resolve Community project."
+  },
+  "versionLabel": {
+    "message": "Version"
+  },
+  "productWebsiteDescription": {
+    "message": "Product website and Android app"
+  },
+  "communityWebsiteDescription": {
+    "message": "Meet the independent initiative behind the project"
+  },
+  "privacyLinkDescription": {
+    "message": "Read the extension's complete local-data disclosure"
+  },
+  "mainNavigationLabel": {
+    "message": "Extension sections"
+  },
+  "summaryNavigationLabel": {
+    "message": "Summary"
+  },
+  "applicationsNavigationLabel": {
+    "message": "Applications"
+  },
+  "aboutNavigationLabel": {
+    "message": "About"
+  },
+  "badgeProtectionActive": {
+    "message": "AwayDoomscrollin': $COUNT$ of 3 platform protections active",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "badgeProtectionOff": {
+    "message": "AwayDoomscrollin': protection is off"
+  },
+  "badgePermissionRequired": {
+    "message": "AwayDoomscrollin': supported-site access is required"
+  },
+  "settingsHeading": {
+    "message": "Protection"
+  },
+  "platformsLabel": {
+    "message": "Protection platforms"
+  },
+  "instagramSettingsHeading": {
+    "message": "Instagram protection"
+  },
+  "tiktokSettingsHeading": {
+    "message": "TikTok protection"
+  },
+  "youtubeSettingsHeading": {
+    "message": "YouTube protection"
+  },
+  "siteAccessRequired": {
+    "message": "Site access is required"
+  },
+  "siteAccessDescription": {
+    "message": "Allow access to the supported sites so protection can run automatically, without clicking the extension first."
+  },
+  "grantSiteAccess": {
+    "message": "Allow supported sites"
+  },
+  "siteAccessGranted": {
+    "message": "Site access allowed. Reload the open site."
+  },
+  "siteAccessAlreadyGranted": {
+    "message": "Site access already allowed"
+  },
+  "siteAccessReady": {
+    "message": "Protection can run automatically on supported sites."
+  },
+  "siteAccessStillRequired": {
+    "message": "Site access was not allowed"
+  },
+  "instagramSetting": {
+    "message": "Instagram Reels & Feed"
+  },
+  "instagramSettingDescription": {
+    "message": "Controls Instagram Reels, posts, and feed interruption."
+  },
+  "instagramModeHeading": {
+    "message": "Protection mode"
+  },
+  "instagramStrictMode": {
+    "message": "Strict Mode"
+  },
+  "instagramStrictModeDescription": {
+    "message": "Stories and profile posts are covered along with Home, Explore, and Reels."
+  },
+  "instagramBalancedMode": {
+    "message": "Balanced Mode"
+  },
+  "instagramBalancedModeDescription": {
+    "message": "Stories and profile posts remain available; Home, Explore, and Reels stay protected."
+  },
+  "tiktokSetting": {
+    "message": "TikTok Feed"
+  },
+  "tiktokSettingDescription": {
+    "message": "Controls supported TikTok feeds and videos."
+  },
+  "tiktokModeHeading": {
+    "message": "Protection mode"
+  },
+  "tiktokStrictMode": {
+    "message": "Strict Mode"
+  },
+  "tiktokStrictModeDescription": {
+    "message": "Feeds, profile videos, and individual videos are covered; messaging remains available."
+  },
+  "tiktokBalancedMode": {
+    "message": "Balanced Mode"
+  },
+  "tiktokBalancedModeDescription": {
+    "message": "Feeds stay closed; one video selected from search or a profile opens in Focused Viewing."
+  },
+  "youtubeSetting": {
+    "message": "YouTube Shorts"
+  },
+  "youtubeSettingDescription": {
+    "message": "Controls recommendation loops and Shorts without judging videos by duration."
+  },
+  "youtubeModeHeading": {
+    "message": "Protection mode"
+  },
+  "youtubeStrictMode": {
+    "message": "Strict Mode"
+  },
+  "youtubeStrictModeDescription": {
+    "message": "Home recommendations and every Shorts surface are protected; search, subscriptions, channels, and long videos remain available."
+  },
+  "youtubeBalancedMode": {
+    "message": "Balanced Mode"
+  },
+  "youtubeBalancedModeDescription": {
+    "message": "Shorts shelves stay hidden, but one Short deliberately selected from search, a channel, subscriptions, or your library opens in Focused Viewing."
+  },
+  "protectedAreasLabel": {
+    "message": "Interrupted"
+  },
+  "availableAreasLabel": {
+    "message": "Available"
+  },
+  "instagramProtectedAreas": {
+    "message": "Reels, Home, and Explore feeds"
+  },
+  "instagramAvailableAreas": {
+    "message": "DMs, profiles, comments, and settings"
+  },
+  "tiktokProtectedAreas": {
+    "message": "For You, Following, Explore, LIVE, and chained video navigation"
+  },
+  "tiktokAvailableAreas": {
+    "message": "Messages; search, profiles, and Focused Viewing in Balanced Mode"
+  },
+  "youtubeProtectedAreas": {
+    "message": "Shorts feeds, chained navigation, autoplay, and recommendation loops"
+  },
+  "youtubeAvailableAreas": {
+    "message": "Search, subscriptions, channels, library, long videos, and Balanced Focused Viewing"
+  },
+  "betaLabel": {
+    "message": "Beta"
+  },
+  "interventionCountLabel": {
+    "message": "Local intervention analysis"
+  },
+  "interventionAnalysisDescription": {
+    "message": "Distribution of interventions saved in this browser — not screen time."
+  },
+  "totalLabel": {
+    "message": "Total"
+  },
+  "resetCount": {
+    "message": "Reset"
+  },
+  "savedStatus": {
+    "message": "Saved"
+  },
+  "localOnlyNotice": {
+    "message": "No telemetry. Settings and data stay in this browser."
+  },
+  "languageSettingLabel": {
+    "message": "Language"
+  },
+  "privacyLink": {
+    "message": "Privacy"
+  },
+  "byResolveCommunity": {
+    "message": "by Resolve Community"
+  },
+  "websiteLinkLabel": {
+    "message": "Open awaydoomscrollin.com"
+  },
+  "communityWebsiteLinkLabel": {
+    "message": "Open resolvecommunity.com"
+  },
+  "interventionEyebrow": {
+    "message": "A deliberate pause"
+  },
+  "homeShroudTitle": {
+    "message": "Feed Protected"
+  },
+  "homeShroudDescription": {
+    "message": "Home feed is off. Stories and Direct Messages remain available."
+  },
+  "homeStrictShroudDescription": {
+    "message": "Home feed and Stories are off. Direct Messages remain available."
+  },
+  "exploreShroudTitle": {
+    "message": "Explore Protected"
+  },
+  "exploreShroudDescription": {
+    "message": "Explore is off. Search remains available."
+  },
+  "postShroudTitle": {
+    "message": "Post Protected"
+  },
+  "postShroudDescription": {
+    "message": "This post is covered. Messages and profiles remain available."
+  },
+  "reelsShroudTitle": {
+    "message": "Reels Protected"
+  },
+  "reelsShroudDescription": {
+    "message": "Reels are exited on entry. Messages and profiles remain available."
+  },
+  "feedInterventionTitle": {
+    "message": "The home feed stopped here."
+  },
+  "feedInterventionDescription": {
+    "message": "A vertical scroll was detected in Instagram's home feed. AwayDoomscrollin' paused the infinite feed before it could continue."
+  },
+  "reelsInterventionTitle": {
+    "message": "Reels stopped here."
+  },
+  "reelsInterventionDescription": {
+    "message": "AwayDoomscrollin' interrupted this Reels route. You can leave Instagram or continue to an intentional area."
+  },
+  "postInterventionTitle": {
+    "message": "This Instagram post stopped here."
+  },
+  "postInterventionDescription": {
+    "message": "AwayDoomscrollin' interrupted this individual post before Explore could become another endless viewing loop."
+  },
+  "exploreInterventionTitle": {
+    "message": "Explore stopped here."
+  },
+  "exploreInterventionDescription": {
+    "message": "AwayDoomscrollin' covered the Explore grid in place and paused its endless scrolling. Search, messages, and profiles remain available."
+  },
+  "tiktokInterventionTitle": {
+    "message": "TikTok stopped here."
+  },
+  "tiktokInterventionDescription": {
+    "message": "AwayDoomscrollin' interrupted this TikTok feed or video before the next automatic scroll."
+  },
+  "tiktokShroudTitle": {
+    "message": "TikTok feed protected"
+  },
+  "tiktokShroudDescription": {
+    "message": "The endless feed is closed. Messages remain available; Balanced Mode allows one intentional video at a time."
+  },
+  "youtubeHomeShroudTitle": {
+    "message": "YouTube Home protected"
+  },
+  "youtubeHomeShroudDescription": {
+    "message": "Recommendation loops are closed. Search, subscriptions, channels, and your library remain available."
+  },
+  "youtubeShortShroudTitle": {
+    "message": "Shorts protected"
+  },
+  "youtubeShortShroudDescription": {
+    "message": "This short-form surface is covered to prevent an automatic viewing loop."
+  },
+  "youtubeInterventionTitle": {
+    "message": "YouTube Shorts stopped here."
+  },
+  "youtubeInterventionDescription": {
+    "message": "AwayDoomscrollin' interrupted this Shorts route. Normal YouTube videos remain available."
+  },
+  "leaveInstagram": {
+    "message": "Leave Instagram"
+  },
+  "leaveTikTok": {
+    "message": "Leave TikTok"
+  },
+  "leaveYouTube": {
+    "message": "Leave YouTube"
+  },
+  "goToMessages": {
+    "message": "Go to messages"
+  },
+  "goToTikTokHome": {
+    "message": "Go to TikTok home"
+  },
+  "goToYouTubeHome": {
+    "message": "Go to normal YouTube"
+  },
+  "disableProtection": {
+    "message": "Disable this protection"
+  },
+  "donateLink": {
+    "message": "Donate & Support"
+  },
+  "donateLinkDescription": {
+    "message": "Support the open-source development on Polar"
+  },
+  "donateLinkLabel": {
+    "message": "Support development on Polar"
+  },
+  "confirmDisableTitle": {
+    "message": "Disable protection?"
+  },
+  "confirmDisableDescription": {
+    "message": "Short-feed protection for this platform will be disabled. You can re-enable it anytime from the extension menu."
+  },
+  "keepProtection": {
+    "message": "Keep Protection"
+  },
+  "confirmDisableButton": {
+    "message": "Yes, Disable Protection"
+  }
+}
