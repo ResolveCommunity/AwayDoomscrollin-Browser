@@ -128,6 +128,40 @@
     return element;
   }
 
+  function createShieldIconElement() {
+    const svgNS = "http://www.w3.org/2000/svg";
+    const svg = document.createElementNS(svgNS, "svg");
+    svg.setAttribute("viewBox", "0 0 64 64");
+    svg.setAttribute("width", "52");
+    svg.setAttribute("height", "52");
+    svg.setAttribute("aria-hidden", "true");
+    svg.setAttribute("focusable", "false");
+
+    const circle = document.createElementNS(svgNS, "circle");
+    circle.setAttribute("cx", "32");
+    circle.setAttribute("cy", "32");
+    circle.setAttribute("r", "29");
+    circle.setAttribute("fill", "#0a222c");
+    circle.setAttribute("stroke", "#1edce6");
+    circle.setAttribute("stroke-opacity", "0.45");
+    circle.setAttribute("stroke-width", "1.5");
+
+    const path1 = document.createElementNS(svgNS, "path");
+    path1.setAttribute("d", "M32 14.5 44 19v9.4c0 7.4-5 12.6-12 15.4-7-2.8-12-8-12-15.4V19z");
+    path1.setAttribute("fill", "#1edce6");
+
+    const path2 = document.createElementNS(svgNS, "path");
+    path2.setAttribute("d", "m25.8 31.4 4.4 4.4 8.6-9");
+    path2.setAttribute("fill", "none");
+    path2.setAttribute("stroke", "#06222b");
+    path2.setAttribute("stroke-width", "3.4");
+    path2.setAttribute("stroke-linecap", "round");
+    path2.setAttribute("stroke-linejoin", "round");
+
+    svg.append(circle, path1, path2);
+    return svg;
+  }
+
   function websiteUrl() {
     const language = extensionApi.i18n.getUILanguage().toLowerCase().startsWith("tr") ? "tr" : "en";
     return `https://awaydoomscrollin.com/${language}/`;
@@ -293,7 +327,7 @@
     if (withContent) {
       const content = createElement("div", "away-doomscrollin-shroud-content");
       const icon = createElement("span", "away-doomscrollin-shroud-icon");
-      icon.innerHTML = SHIELD_ICON_SVG;
+      icon.append(createShieldIconElement());
       content.append(icon);
       const [titleKey, descriptionKey] = surfaceBannerMessageKeys();
       content.append(
@@ -303,7 +337,7 @@
       shroud.append(content);
     } else if (showIcon) {
       const icon = createElement("span", "away-doomscrollin-grid-shield-icon");
-      icon.innerHTML = SHIELD_ICON_SVG;
+      icon.append(createShieldIconElement());
       shroud.append(icon);
     }
   }
@@ -589,7 +623,7 @@
       banner.id = SURFACE_BANNER_ID;
       banner.setAttribute("role", "status");
       const icon = createElement("span", "away-doomscrollin-shroud-icon");
-      icon.innerHTML = SHIELD_ICON_SVG;
+      icon.append(createShieldIconElement());
       const [titleKey, descriptionKey] = surfaceBannerMessageKeys();
       banner.append(
         icon,

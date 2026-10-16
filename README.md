@@ -2,6 +2,11 @@
 
 > Open-source, privacy-first browser extension to pause infinite scrolling on Instagram Reels, TikTok, and YouTube Shorts.
 
+## Install
+
+- **Chrome Web Store:** [Get for Chrome & Chromium browsers](https://chromewebstore.google.com/detail/nlnbeidkmlhlfggihfhmghennoalfgcg)
+- **Firefox Add-ons:** [Get for Mozilla Firefox](https://addons.mozilla.org/addon/awaydoomscrollin/)
+
 ## Supported Browsers
 - Google Chrome & Chromium-based browsers (Brave, Edge, Opera, Vivaldi) - Manifest V3
 - Mozilla Firefox - Manifest V3
